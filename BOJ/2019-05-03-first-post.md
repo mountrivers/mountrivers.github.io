@@ -4,6 +4,8 @@ date: 2017-10-20 08:26:28 -0400
 categories: jekyll update
 ---
 
+
+```
 /*
 Problem : 백준 10814 나이순 정렬
 작성자 : 이산하
@@ -44,3 +46,4 @@ int main() {
 	}
 	return 0; 
 }
+```
