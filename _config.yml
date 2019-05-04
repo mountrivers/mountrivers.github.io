@@ -76,7 +76,7 @@ google:
   search_engine_id       : UA-139539261-1 # YOUR_SEARCH_ENGINE_ID
   instant_search         : true # false (default), true
 # SEO Related
-google_site_verification :
+google_site_verification : "hSdRjFAMlE58QCE7FMzvvZmC7-xrukVwQ-ovu_qY9-8"
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
