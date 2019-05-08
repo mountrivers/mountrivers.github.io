@@ -1,4 +1,4 @@
 User-agent: *
 Allow: / 
-Sitemap: http://mountrivers.github.io/sitemap.xmlSitemap:
+Sitemap: http://mountrivers.github.io/sitemap.xmlSitemap
 http://mountrivers.github.io/_pages/sitemap.md
