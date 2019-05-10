@@ -1,6 +1,6 @@
 ---	
 title: "Posts by Tags"	
 permalink: /tags/	
-layout: tags
+layout: tag
 author_profile: true	
 ---
