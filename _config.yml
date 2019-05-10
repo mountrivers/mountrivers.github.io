@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "이산하"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/thumnail.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "To be perfect."
   location         : "Incheon, Korea"
   email            : "tksgk77@gmail.com"
