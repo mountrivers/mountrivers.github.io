@@ -1,42 +1,30 @@
 ---
-layout: archive
+layout: default
 ---
 
-{{ content }}
+<article class="tag">
+    <div>
+        <header class="post-header">
+            <h1 class="page-heading">Tag cloud</h1>
+        </header>
 
-{% assign tags_max = 0 %}
-{% for tag in site.tags %}
-  {% if tag[1].size > tags_max %}
-    {% assign tags_max = tag[1].size %}
-  {% endif %}
-{% endfor %}
+        <div>
+            {% include tag_cloud.html %}
+        </div>  
 
-<ul class="taxonomy__index">
-  {% for i in (1..tags_max) reversed %}
-    {% for tag in site.tags %}
-      {% if tag[1].size == i %}
-        <li>
-          <a href="#{{ tag[0] | slugify }}">
-            <strong>{{ tag[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
-          </a>
-        </li>
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
-</ul>
+        <div>
+            {%  for tag in site.tags %}
+                <!-- tag_name 변수 지정: 태그명은 소문자화(slugize) 한다 -->
+                {% capture tag_name %}{{tag|first|slugize}}{% endcapture %}
+                <!-- tag_size 변수 지정-->
+                {% capture tag_size %}{{tag|last|size}}{% endcapture %}
+                <!-- font_size 변수 지정: 태그숫자/전체태그숫자 * 100 + 50 -->
+                {% capture font_size %}{{tag_size | times: site.tags.size | divided_by:site.tags.size | plus: 14 }}{% endcapture %}
 
-{% for i in (1..tags_max) reversed %}
-  {% for tag in site.tags %}
-    {% if tag[1].size == i %}
-      <section id="{{ tag[0] | slugify | downcase }}" class="taxonomy__section">
-        <h2 class="archive__subtitle">{{ tag[0] }}</h2>
-        <div class="entries-{{ page.entries_layout | default: 'list' }}">
-          {% for post in tag.last %}
-            {% include archive-single.html type=page.entries_layout %}
-          {% endfor %}
-        </div>
-        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
-      </section>
-    {% endif %}
-  {% endfor %}
-{% endfor %}
+                <div class="tagname">
+                    <a href="/tags/archives#{{tag_name}}" style="font-size:{{font_size}}px">{{ tag_name }}</a>
+                </div>
+            {% endfor %}
+        </div> 
+    </div>
+</article>
