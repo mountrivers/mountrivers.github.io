@@ -49,7 +49,8 @@ tags:
  3) 내부 스키마(Internal Schema) : 전체 데이터베이스의 물리적 저장 형태를 기술하는 것 실제 레코드 내에 저장 되는 것
  
 ## ERD
- ### ERD란 ? 
+
+### ERD란 ? 
   각각의 엔티디들이 서로 어떤 관계를 가지고있는지. Entity Relationship Model
   
 ### ERD 표현
