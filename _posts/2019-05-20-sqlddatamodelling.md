@@ -52,10 +52,10 @@ tags:
  ### ERD란 ? 
   각각의 엔티디들이 서로 어떤 관계를 가지고있는지. Entity Relationship Model
   
- ### ERD 표현
+### ERD 표현
   ![erd](https://user-images.githubusercontent.com/36880919/58019770-44ddfb80-7b41-11e9-8ee7-7b530014c49c.png)
   
- ### ERD 설명
+### ERD 설명
   1) 1976년 피터 첸이 만든 표기법
   
   2) 작성 순서 : 엔티티 도출 -> 엔티티 배치 -> 관계 설정 -> 관게명 기술 (도배설기)
