@@ -116,6 +116,28 @@ constraint [제약조건이름] primary key(칼럼명)
 
 desc [테이블명];
 
+## null, not null
+![constraint2](https://user-images.githubusercontent.com/36880919/58309280-c504a980-7e3e-11e9-8628-5efd222cbc7f.PNG)
+
+테이블을 만들 때 뒤에 not null 을 붙여주면 null 값이 오지 않게 됩니다.
+
+아무것도 안붙이면 기본으로 null 이 가능합니다.
+
+## default
+![constraint3](https://user-images.githubusercontent.com/36880919/58309284-c59d4000-7e3e-11e9-9561-1f30917a3b26.PNG)
+
+테이블을 만들 때 칼럼명 뒤에 default(n) 을 만들면, 아무것도 안들어 왔을때 기본적으로 n 으로 세팅 됩니다.
+
+![constraint4](https://user-images.githubusercontent.com/36880919/58309282-c504a980-7e3e-11e9-8499-b78a34903dd1.PNG)
+
+## index
+![index1](https://user-images.githubusercontent.com/36880919/58309281-c504a980-7e3e-11e9-93f8-5ec3ee77679b.PNG)
+
+인덱스로 만들어줍니다. 기본적으로 multi index로 지정 되며 오름 차순으로 정렬 되게 됩니다.
+
+만약 단 하나의 인덱스만 존제하게 하고 싶다면 unique index로 지정 하면 됩니다.
 
 
-**임시 저장 상태입니다. 뒤에 제약사항에 대해서만 조금 이어가고 나머지는 이론 정리하며 풀어나가겠습니다.**
+create (unique) index [인덱스명] on [테이블명] [칼럼이름];
+
+
