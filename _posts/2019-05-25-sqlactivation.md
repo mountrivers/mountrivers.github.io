@@ -1,6 +1,6 @@
 ---
 title: " SQLD 핵심 정리 sql 활용 -1"
-date: 2019-05-20
+date: 2019-05-25
 categories: sqld
 tags: 
   - sqld
