@@ -76,7 +76,8 @@ for(int i =0 ; i < a.size(); i++){
 정말 쉽다.. 나온 설명들은 다 너무 어렵지만 이렇게 코드적으로 생각하면 편하다.
 
 ## Sort-Merge Join 코딩처럼 
-```int a[30];
+```
+int a[30];
 int b[30];
 int c[30];
 int aIndex =0;
