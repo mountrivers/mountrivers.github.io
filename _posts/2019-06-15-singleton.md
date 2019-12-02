@@ -77,3 +77,55 @@ int main() {
 객체를 하나 더 만들었는데도, id, pw 값은 동일하며
 
 가리키는 주소 또한 같은 것을 확인 할 수 있다. 
+
+
+# 만약 값을 수정 못하게 하고 싶다면?
+```
+#include <iostream>
+
+using namespace std;
+
+class singleton {
+public:
+	static singleton* getinstance(int a, int b) {
+		if (!one) {
+			one = new singleton(a,b);
+			
+		}
+		return one;
+	}
+	void set(int a, int b) {
+		id = a;
+		pw = b;
+	}
+	void show() {
+		cout << "ID : " << id << " PW : " << pw << endl;
+	}
+private:
+	static singleton* one;
+	int id;
+	int pw;
+	singleton(int a,int b) {
+		id = a;
+		pw = b;
+	}
+};
+singleton* singleton::one = 0;
+
+
+int main() {
+	int a;
+	singleton *test1 = singleton::getinstance(1,2);
+	test1->show();
+
+	singleton *test2 = singleton::getinstance(2,3);
+	test2->show();
+	test1->show();
+
+	cout << test1 << " " << test2;
+	cin >> a;
+	return 0;
+}
+``` 
+
+위와 같이 해주면 된다. 
