@@ -1,11 +1,12 @@
 ---
-title: " 싱글톤 이론, 구현"
+title: " 컴퓨터공학 취준 짤막 면접 - 싱글톤 이론, 구현"
 date: 2019-06-15
 categories: study
 tags: 
   - singleton
   - c++
   - designpattern
+  - 짤막면접준비
 ---
 
 # 싱글톤 이란? 
