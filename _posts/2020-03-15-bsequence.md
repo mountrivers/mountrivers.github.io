@@ -19,6 +19,9 @@ tags:
 
 같은수 여러번X 순서 상관 O / 값이 주어짐  : https://mountrivers.github.io/boj15654
 
-같은수 여러번X 순서 상관 O / 값이 주어짐  : https://mountrivers.github.io/boj15655
+같은수 여러번X 순서 상관 X / 값이 주어짐  : https://mountrivers.github.io/boj15655
+
+같은수 여러번O 순서 상관 X / 값이 주어짐  : https://mountrivers.github.io/boj15656
+
 
 
