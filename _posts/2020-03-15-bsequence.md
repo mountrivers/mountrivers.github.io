@@ -9,6 +9,8 @@ tags:
   - 수열
 ---
 
+# basic
+
 같은수 여러번X 순서 상관 O : https://mountrivers.github.io/boj15649/
 
 같은수 여러번X 순서 상관 X :https://mountrivers.github.io/boj15650/
@@ -16,6 +18,11 @@ tags:
 같은수 여러번O 순서 상관 X : https://mountrivers.github.io/boj15651/
 
 같은수 여러번O 순서 상관 X 무조건 오름차순 :  https://mountrivers.github.io/boj15652/
+
+# 값이 기본으로 주어지는 
+
+단순하게 수열을 받고, 소트 해준 다음, 위에 basic 단계에서 순서만 뽑아다 쓰면 된다. 
+
 
 같은수 여러번X 순서 상관 O / 값이 주어짐  : https://mountrivers.github.io/boj15654
 
@@ -25,6 +32,43 @@ tags:
 
 같은수 여러번O 순서 상관 X 무조건 오름차순/ 값이 주어짐  : https://mountrivers.github.io/boj15657
 
+# 값이 주어지지만, 중복이 가능 한 것
+
+unordered_set 사용 -> 결과 체크 
+
+```
+unordered_set<string> checker;
+
+string temp;
+		for (int i = 0; i < m; i++) {
+			temp +=  to_string(result[v[i]]);
+		}
+		auto itr = checker.find(temp);
+        if (itr == checker.end())
+            결과
+}
+```
+set 을 사용하여, 이미 출력한 것과 같은것이 있는지 판단하고, 
+
+확인하고 결과를 출력하면 됩니다. 
+
+예를들어, 1 5 9 10 을 검사하려면, 
+
+이를 문자열로 만들어
+
+"15910" 으로 만듭니다. 
+
+이걸 set 에서 "15910"이 있는지 검사를 합니다. 
+
+그리고 만약에 있다면 넘어가고, 
+
+없다면 "15910" 을 set에 넣어주는것과 동시에 
+
+" 1 5 9 10 " 을 출력 해주면 됩니다. 
+
+
+
+순서 상관 O / 같은 수 여러개까지 값이 주어짐  : https://mountrivers.github.io/boj15663
 
 
 
