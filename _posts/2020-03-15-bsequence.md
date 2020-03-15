@@ -16,3 +16,6 @@ tags:
 같은수 여러번O 순서 상관 X : https://mountrivers.github.io/boj15651/
 
 같은수 여러번O 순서 상관 X 무조건 오름차순 :  https://mountrivers.github.io/boj15652/
+
+같은수 여러번X 순서 상관 O / 값이  : https://mountrivers.github.io/boj15654
+
