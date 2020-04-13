@@ -94,3 +94,6 @@ https://mountrivers.github.io/20190625diary/
 ![4](https://user-images.githubusercontent.com/36880919/79065444-4d0bd000-7ceb-11ea-9fbf-f811404dda77.jpg)
 
 2020.04.12
+
+2020.04.13 - 레벨 5 획득 실패.... 
+
